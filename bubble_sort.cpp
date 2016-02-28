@@ -18,7 +18,7 @@ void bubble_sort(int a[], int len)
 	for (i = 0; i < len -1 ; i++)
 	{
 		iter = 0;
-		for (j = 0; j < len -1 ; j++)
+		for (j = 0; j < len - 1 - i ; j++)
 		{
 			if (a[j] > a[j + 1])
 			{
