@@ -14,16 +14,20 @@ void swap(int *a, int *b)
 }
 void bubble_sort(int a[], int len)
 {
-	int i, j, k;
+	int i, j, k, iter = 1;
 	for (i = 0; i < len -1 ; i++)
 	{
+		iter = 0;
 		for (j = 0; j < len -1 ; j++)
 		{
 			if (a[j] > a[j + 1])
 			{
+				iter = 1;
 				swap((a + j), (a + j + 1));
 			}
-		}
+		}	
+		if (iter == 0)
+			break;
 	}
 }
 
